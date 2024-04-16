@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KLIPS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <style>
         .sidebar {
             min-height: 100vh; /* Imposta l'altezza minima a 100% dell'altezza del viewport */
@@ -38,11 +40,40 @@
                                 <span data-feather="search"></span>
                                 Cerca
                             </a>
+                        </li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span data-feather="grid"></span>
+                            Categorie
+                        </a>
+                        <li class="nav-item">
+                            <span class="nav-link disabled text-muted">Amici</span>
                         </li>
+                        <ul class="nav flex-column ml-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></i> Utente1 <i class="fas fa-circle"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"></i> Utente2 <i class="fas fa-circle"></i></a>
+                            </li>
+                            <!-- Puoi aggiungere altri utenti qui -->
+                        </ul>
+                        <div class="position-absolute" style="bottom: 0">
+
+                        <ul class="nav flex-column mt-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span data-feather="settings"></span>
+                                    Impostazioni
+                                </a>
+                            </li>
+                        </ul>
                         <!-- Qui puoi aggiungere altri elementi della sidebar -->
                     </ul>
-                </div>
+                
+               
             </nav>
+        </div>
+
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                 <!-- Qui andrà il contenuto principale della tua home page, come i video degli amici -->
