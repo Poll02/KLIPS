@@ -43,9 +43,9 @@ body {
 
 .navigation .menuLogo {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 40px;
+    left: -20px;
+    width: 300%;
     height: 60px;
     cursor: pointer;
     display: flex;
@@ -189,6 +189,8 @@ body {
     height: 100vh; /* Imposta l'altezza del contenitore per occupare l'intera altezza della finestra del browser */
 }
 
+
+
 .login-form {
     width: 400px;
     margin: auto; /* Centra il modulo di accesso orizzontalmente */
@@ -250,3 +252,61 @@ body {
     text-align: center;
     font-size: 13px;
 }
+
+.profile-info{
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic{
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic img{
+    display: block;
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+.profile-pic img:hover{
+    filter: blur(3px);
+}
+
+.change-profile-icon {
+    font-size: 25px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #fff; /* Colore dell'icona */
+    cursor: pointer; /* Cambia il cursore quando ci passi sopra */
+    opacity: 0; /* Inizialmente nascondi l'icona */
+    transition: opacity 0.3s; /* Aggiungi una transizione all'opacità per creare un effetto di dissolvenza */
+}
+
+.profile-pic:hover .change-profile-icon {
+    opacity: 1; /* Mostra l'icona quando ci passi sopra con il mouse */
+}
+
+
+.profile-bio{
+    flex: 1;
+}
+
+.profile-bio ion-icon{
+font-size: 30px;
+}
+
+.page-box .signout p {
+    position: absolute;
+    left: 90%;
+    color: red;
+}
+
