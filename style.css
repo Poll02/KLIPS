@@ -55,7 +55,7 @@ body {
 }
 
 .navigation .menuLogo img{
-    width: 500%;
+    width: 100%;
     height: auto;
 }
 
@@ -241,6 +241,15 @@ body {
     height: auto;
 }
 
+.registration-success{
+    text-align: center;
+}
+
+.registration-success ion-icon{
+    color: rgb(0, 179, 0);
+    font-size: 50px;
+}
+
 
 
 .login-form button:hover {
@@ -309,4 +318,71 @@ font-size: 30px;
     left: 90%;
     color: red;
 }
+
+.post-header img {
+    width: 40px; /* Imposta la larghezza dell'immagine */
+    height: 40px; /* Imposta l'altezza dell'immagine */
+    border-radius: 50%; /* Rendi l'immagine rotonda */
+    object-fit: cover; /* Fai in modo che l'immagine riempia completamente il suo contenitore senza distorsioni */
+    margin-right: 10px; /* Aggiungi un margine destro per separare l'immagine dalle informazioni sull'utente */
+}
+
+.post-username{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game-name{
+    padding: 10px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    background-color: #1f1c37;
+    border-radius: 10px;
+    color: white;
+}
+
+.post-content {
+    display: flex;
+    justify-content: center; /* Centra il contenuto lungo l'asse orizzontale */
+    align-items: left; /* Centra il contenuto lungo l'asse verticale */
+    overflow: hidden; /* Evita che il video esca dal box se è più grande */
+}
+
+.post-content video{
+    margin-top: 20px;
+    width: 1000px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post-actions{
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    align-items: center;
+    
+}
+
+.post-actions ion-icon{
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 3px;
+}
+
+.divider {
+    border: none; /* Rimuovi il bordo predefinito */
+    width: 50%;
+    height: 1px; /* Imposta l'altezza del divider */
+    background-color: #646464; /* Colore del divider */
+    margin: 20px 0; /* Aggiungi spazio sopra e sotto il divider */
+}
+
+
+
+
+
+
+
+
 

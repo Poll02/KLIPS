@@ -28,5 +28,26 @@ navItems.forEach(item => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var registrationForm = document.querySelector('.login-form form');
+    var registrationFormHeading = document.querySelector('.login-form h2');
+    var registrationSuccess = document.querySelector('.registration-success');
+    var registrationLink = document.querySelector('.register-link p');
+
+    registrationForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Previeni il comportamento predefinito del modulo
+
+        // Nascondi il modulo di registrazione
+        registrationForm.style.display = 'none';
+        registrationFormHeading.style.display = 'none';
+        registrationLink.style.display = 'none';
+
+        // Visualizza il messaggio di registrazione
+        registrationSuccess.style.display = 'block';
+    });
+});
+
+
+
 
 
