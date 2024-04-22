@@ -236,6 +236,22 @@ body {
 
 }
 
+.logomobile-container{
+    display: none;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logomobile-container h2{
+    position: absolute;
+    display: none;
+    color: #fff;
+    font-size: 35px;
+    margin-top: 400px;
+}
+
 .login-container .logo-container img{
     width: 60%;
     height: auto;
@@ -379,6 +395,47 @@ font-size: 30px;
 }
 
 
+@media only screen and (max-width: 768px) {
+    .login-form {
+        max-width: 300px;
+    }
+    .logo-container {
+        display: none; /* Nascondi il logo */
+      }
+
+    .logomobile-container h2{
+        display: block;
+    }
+    
+    .login-form {
+        margin: auto; /* Centra il form orizzontalmente */
+      }
+
+      .navigation {
+        width: 80%; /* Imposta la larghezza della barra laterale */
+        margin: auto; /* Centra la barra laterale orizzontalmente */
+        position: relative; /* Cambia la posizione in relativa */
+        top: 20px; /* Sposta la barra laterale più in alto */
+      }
+    
+      .navigation ul {
+        flex-direction: row; /* Modifica la direzione del layout della lista */
+        justify-content: center; /* Distribuisci uniformemente gli elementi */
+        align-items: center; /* Centra verticalmente gli elementi */
+      }
+
+      .menuLogo img{
+        display: none;
+      }
+
+    
+      .navigation ul li {
+        width: auto; /* Imposta la larghezza degli elementi della lista su automatico */
+      }
+}
+
+
+  
 
 
 
