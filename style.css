@@ -11,6 +11,10 @@ body {
     background: #1f1c37;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*Video*/
 #video-bg {
     position: fixed;
@@ -225,11 +229,18 @@ body {
         cursor: pointer;
         border-radius: 9px;
         margin-top: 30px;
+        transition: background-color 0.3s;
       }
 
+.page-box-messaggi .newchat-btn:hover{
+    
+    background-color: #19ab97;
+
+}
 
 
-/*Schermata di Login-Registrazione*/
+
+/*Schermata di \-Registrazione*/
 .login-container {
     display: flex;
     justify-content: center;
@@ -308,6 +319,7 @@ body {
 
     height: auto;
     width: 400px;
+    
 }
 
 .registration-success{
@@ -404,6 +416,55 @@ font-size: 30px;
     color:#1f1c37;
 }
 
+.page-box-profilo .klips-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.page-box-profilo .klips-grid .prova{
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #1f1c37;
+}
+
+.page-box-profilo .klips-grid .prova video{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.page-box-profilo .klips-grid .prova video:hover{
+    -webkit-filter: brightness(40%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.page-box-profilo .see-all button{
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    width: 17%;
+    background-color:#36f43f ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.page-box-profilo .see-all button:hover{
+    background-color: hsl(170, 100%, 50%);
+
+}
 /*HomePage*/
 
 .post-header img {
@@ -483,26 +544,87 @@ font-size: 30px;
       }
 
       .navigation {
-        width: 80%; /* Imposta la larghezza della barra laterale */
-        margin: auto; /* Centra la barra laterale orizzontalmente */
-        position: relative; /* Cambia la posizione in relativa */
-        top: 20px; /* Sposta la barra laterale più in alto */
+     display: none;
       }
-    
-      .navigation ul {
-        flex-direction: row; /* Modifica la direzione del layout della lista */
-        justify-content: center; /* Distribuisci uniformemente gli elementi */
-        align-items: center; /* Centra verticalmente gli elementi */
-      }
+}
 
-      .menuLogo img{
-        display: none;
-      }
+/*Tutte le KLIPS*/
+.page-box-klips {
+    color: #1f1c37;
+    position: absolute; /* Posiziona il rettangolo in modo assoluto rispetto al contenitore della pagina */
+    top: 75px; /* Distanza dalla parte superiore della pagina (modifica secondo necessità) */
+    bottom: 50px; /* Distanza dalla parte inferiore della pagina (modifica secondo necessità) */
+    left: 150px; /* Distanza dalla sidebar (modifica secondo necessità) */
+    width: calc(100% - 250px); /* Larghezza del rettangolo (larghezza della finestra meno larghezza della sidebar) */
+    padding: 20px; /* Spazio interno del rettangolo */
+    height: 750px;
+    background-color: #ffffff; /* Colore di sfondo del rettangolo */
+    border-radius: 10px; /* Bordi arrotondati */
+    overflow-y: auto; /* Aggiungi barra di scorrimento verticale se il contenuto è più grande del rettangolo */
+}
 
-    
-      .navigation ul li {
-        width: auto; /* Imposta la larghezza degli elementi della lista su automatico */
-      }
+/*Aggiungi KLIP*/
+.page-box-addklip {
+    color: #1f1c37;
+    position: absolute; /* Posiziona il rettangolo in modo assoluto rispetto al contenitore della pagina */
+    top: 75px; /* Distanza dalla parte superiore della pagina (modifica secondo necessità) */
+    bottom: 50px; /* Distanza dalla parte inferiore della pagina (modifica secondo necessità) */
+    left: 150px; /* Distanza dalla sidebar (modifica secondo necessità) */
+    width: calc(100% - 250px); /* Larghezza del rettangolo (larghezza della finestra meno larghezza della sidebar) */
+    padding: 20px; /* Spazio interno del rettangolo */
+    height: 750px;
+    background-color: #ffffff; /* Colore di sfondo del rettangolo */
+    border-radius: 10px; /* Bordi arrotondati */
+    overflow-y: auto; /* Aggiungi barra di scorrimento verticale se il contenuto è più grande del rettangolo */
+}
+
+
+
+.form-group-klip label {
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1f1c37;
+    margin-top: 20px;
+}
+.form-group-klip input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+}
+
+.klip-preview{
+    height: auto;
+    width: 60%;
+}
+
+
+
+#video-preview{
+    margin-top: 20px;
+    object-fit: fill;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    border: 3px solid #1f1c37;
+}
+
+.sendklip-btn{
+    background-color: #de36f4;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.sendklip-btn:hover{
+    background-color:blueviolet ;
 }
 
 

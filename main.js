@@ -47,6 +47,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+function handleFileUpload(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const videoPreview = document.getElementById('video-preview');
+            videoPreview.src = e.target.result;
+            videoPreview.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+
 
 
 
