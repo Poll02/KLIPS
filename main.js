@@ -53,8 +53,17 @@ function handleFileUpload(event) {
         const reader = new FileReader();
         reader.onload = function(e) {
             const videoPreview = document.getElementById('video-preview');
+            const label = document.getElementById('file-label');
+            const sendButton = document.getElementById('send-button');
+            const backButton = document.getElementById('back-button');
+            backButton.style.display = 'block';
+            const header = document.getElementById('preview-header');
+            header.style.display = 'block';
+            sendButton.style.display = 'block';
             videoPreview.src = e.target.result;
             videoPreview.style.display = 'block';
+            label.style.display = 'none';
+
         };
         reader.readAsDataURL(file);
     }

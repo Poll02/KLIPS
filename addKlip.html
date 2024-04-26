@@ -53,19 +53,19 @@
                 <div class="page-box-addklip">
                     <div class="klip-form">
                         <form action="newklip.php" method="post">
-                            <div class="form-group-klip">
-                                <label for="klip-info">Informazioni</label>
-                                <input type="text" id="klip-info" name="klip-info" placeholder="Dicci qualcosa di più sulla tua KLIP - Perchè la stai condividendo?">
-                                <div class="form-group-klip">
-                                    <label for=file">Seleziona la tua KLIP</label>
-                                    <input type="file" id="klip-file" accept=".mp4, .avi, .mov" name="klip-file" onchange="handleFileUpload(event)">
-                                    <div class="klip-preview">
-                                        <video id="video-preview" controls style="display: none;"></video>
-                                        <button type="button" class="sendklip-btn"><i class="fa fa-upload"></i> Carica</button> <!--Da cambiare in submit-->
+                            <input type="file" id="klip-file" accept="video/*" onchange="handleFileUpload(event)">
+                            <label for="klip-file" id="file-label"><ion-icon name="cloud-upload"></ion-icon>Scegli la tua KLIP</label>
+                            
+                    </div>
+                    <div class="klip-preview">
+                        <h2 id="preview-header">Preview</h2>
+                        <video id="video-preview" controls style="display: none;"></video>
+                        <div class="klip-btns">
+                            <button type="button" id="send-button" class="sendklip-btn"><i class="fa fa-upload"></i> Carica</button> <!--Da cambiare in submit-->
+                            <a href="addKlip.html">                            <button type="button" id="back-button" class="sendklip-btn"><i class="fa fa-rotate-left"></i> Indietro</button> <!--Da cambiare in submit-->
+                            </a>
+                        </div>
 
-                                    </div>
-                                </div>
-                            </div>
                     </div>
                     
                 </div>
