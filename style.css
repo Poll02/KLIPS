@@ -192,20 +192,18 @@ a{
     height: 950px;
     background-color: #ffffff; /* Colore di sfondo del rettangolo */
     border-radius: 10px; /* Bordi arrotondati */
-    overflow-y: auto; /* Aggiungi barra di scorrimento verticale se il contenuto è più grande del rettangolo */
+    overflow-y: scroll; /* Aggiungi barra di scorrimento verticale se il contenuto è più grande del rettangolo */
 }
 
 
 
 
-/*Messaggi*/
+/*Find*/
 
-.page-box-messaggi{
+.page-box-find{
     color: #1f1c37;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute; /* Posiziona il rettangolo in modo assoluto rispetto al contenitore della pagina */
     top: 75px; /* Distanza dalla parte superiore della pagina (modifica secondo necessità) */
     bottom: 50px; /* Distanza dalla parte inferiore della pagina (modifica secondo necessità) */
@@ -218,16 +216,56 @@ a{
     overflow-y: auto; /* Aggiungi barra di scorrimento verticale se il contenuto è più grande del rettangolo */
 }
 
-.page-box-messaggi ion-icon{
+.games-grid{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    margin-bottom: 20px;
+}
+
+.games-grid-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: white;
+}
+
+.games-grid-box img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#idsearch{
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.games-grid-box img:hover{
+    filter:brightness(60%);
+}
+
+.page-box-find ion-icon{
     font-size: 150px;
     color: #1f1c37;
 }
 
-.page-box-messaggi p{
+.page-box-find p{
     font-size: 18px;
 }
 
-.page-box-messaggi .newchat-btn{
+.page-box-find .newchat-btn{
         background-color: #13f4d5;
         border: none;
         color: white;
@@ -239,7 +277,7 @@ a{
         transition: background-color 0.3s;
       }
 
-.page-box-messaggi .newchat-btn:hover{
+.page-box-find .newchat-btn:hover{
     
     background-color: #19ab97;
 
@@ -542,6 +580,54 @@ header nav:hover > a:not(:hover){
     align-items: center;
 }
 
+#game-name{
+    background-color: #19ab97;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+#gg-button{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 10px 22px;
+    background-color: rgb(255, 235, 119);
+    border: none;
+    border-radius: 50px;
+    font-weight: bolder;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#gg-button:focus{
+    background-color: red;
+}
+
+#gg-button:active{
+    transform: scale(1.16);
+    background-color: gold;
+}
+
+
+
+
+
+#game-name:hover{
+    filter: brightness(130%);
+    cursor: pointer;
+
+}
+
+.page-box .video{
+    display: flex;
+    
+}
+
 #foto-profilo{
     margin-right: 20px;
     border-radius: 50%;
@@ -556,7 +642,6 @@ header nav:hover > a:not(:hover){
     height: auto;
     width: 70%;
     border-radius: 5px;
-    border: 3px solid #1f1c37;
 }
 
 
