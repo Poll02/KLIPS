@@ -180,6 +180,8 @@ a{
 }
 
 .page-box {
+    display: flex;
+    flex-direction: column;
     color: #1f1c37;
     position: absolute; /* Posiziona il rettangolo in modo assoluto rispetto al contenitore della pagina */
     top: 75px; /* Distanza dalla parte superiore della pagina (modifica secondo necessità) */
@@ -210,7 +212,7 @@ a{
     left: 150px; /* Distanza dalla sidebar (modifica secondo necessità) */
     width: calc(100% - 250px); /* Larghezza del rettangolo (larghezza della finestra meno larghezza della sidebar) */
     padding: 20px; /* Spazio interno del rettangolo */
-    height: 950px;
+    height: 850px;
     background-color: #ffffff; /* Colore di sfondo del rettangolo */
     border-radius: 10px; /* Bordi arrotondati */
     overflow-y: auto; /* Aggiungi barra di scorrimento verticale se il contenuto è più grande del rettangolo */
@@ -403,7 +405,7 @@ header nav:hover > a:not(:hover){
     left: 150px; /* Distanza dalla sidebar (modifica secondo necessità) */
     width: calc(100% - 250px); /* Larghezza del rettangolo (larghezza della finestra meno larghezza della sidebar) */
     padding: 20px; /* Spazio interno del rettangolo */
-    height: 950px;
+    height: 850px;
     background-color: #ffffff; /* Colore di sfondo del rettangolo */
     border-radius: 10px; /* Bordi arrotondati */
     overflow-y: auto; /* Aggiungi barra di scorrimento verticale se il contenuto è più grande del rettangolo */
@@ -535,63 +537,26 @@ header nav:hover > a:not(:hover){
 }
 /*HomePage*/
 
-.post-header img {
-    width: 40px; /* Imposta la larghezza dell'immagine */
-    height: 40px; /* Imposta l'altezza dell'immagine */
-    border-radius: 50%; /* Rendi l'immagine rotonda */
-    object-fit: cover; /* Fai in modo che l'immagine riempia completamente il suo contenitore senza distorsioni */
-    margin-right: 10px; /* Aggiungi un margine destro per separare l'immagine dalle informazioni sull'utente */
-}
-
-.post-username{
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.game-name{
-    padding: 10px;
-    font-size: 12px;
-    float: left;
-    text-align: center;
-    background-color: #1f1c37;
-    border-radius: 10px;
-    color: white;
-}
-
-.post-content {
+.foto-nome-data{
     display: flex;
-    justify-content: center; /* Centra il contenuto lungo l'asse orizzontale */
-    align-items: left; /* Centra il contenuto lungo l'asse verticale */
-    overflow: hidden; /* Evita che il video esca dal box se è più grande */
-}
-
-.post-content video{
-    margin-top: 20px;
-    width: 1000px;
-    height: auto;
-    border-radius: 5px;
-}
-
-.post-actions{
-    display: flex;
-    justify-content: left;
-    margin-left: 50px;
     align-items: center;
-    
 }
 
-.post-actions ion-icon{
+#foto-profilo{
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 80px;
+    height: auto;
+}
+
+#video-homepage{
+    margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 30px;
-    border-radius: 3px;
-}
-
-.divider {
-    border: none; /* Rimuovi il bordo predefinito */
-    width: 50%;
-    height: 1px; /* Imposta l'altezza del divider */
-    background-color: #646464; /* Colore del divider */
-    margin: 20px 0; /* Aggiungi spazio sopra e sotto il divider */
+    object-fit: fill;
+    height: auto;
+    width: 70%;
+    border-radius: 5px;
+    border: 3px solid #1f1c37;
 }
 
 
@@ -672,7 +637,7 @@ header nav:hover > a:not(:hover){
     left: 150px; /* Distanza dalla sidebar (modifica secondo necessità) */
     width: calc(100% - 250px); /* Larghezza del rettangolo (larghezza della finestra meno larghezza della sidebar) */
     padding: 20px; /* Spazio interno del rettangolo */
-    height: 950px;
+    height: 850px;
     background-color: #ffffff; /* Colore di sfondo del rettangolo */
     border-radius: 10px; /* Bordi arrotondati */
     overflow-y: auto; /* Aggiungi barra di scorrimento verticale se il contenuto è più grande del rettangolo */
