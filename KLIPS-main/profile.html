@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Grafiche/favicon.png" type="image/png">
+    <link rel="icon" href="Grafiche/favicon.png" type="image/png">
+    <title>KLIPS - Condividi i tuoi momenti migliori</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="menuLogo">
+            <img src="Grafiche/logo512.png" type="image/png" alt="Logo">
+        </div>
+        <ul>
+            <li class="list" style="--colr: #368ff4;" data-link="homepage.html">
+                <a href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+
+            <li class="list active" style="--colr: #36f43f;" data-link="profile.html">
+                <a href="#">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="text">Profilo</span>
+                </a>
+            </li>
+            <li class="list" style="--colr: #13f4d5;" data-link="messages.html">
+                <a href="#">
+                    <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+                    <span class="text">Messaggi</span>
+                </a>
+            </li>
+
+            <li class="list" style="--colr: #de36f4;" data-link="addKlip.html">
+                <a href="#">
+                    <span class="icon"><ion-icon name="add-circle-outline"></ion-icon></span>
+                    <span class="text">Nuovo</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="page-content">
+            <!-- Contenuto della pagina -->
+            <div id="profile" class="profile">
+                <h1>Profilo</h1>
+                <div class="page-box-profilo">
+                    <div class="signout">
+                        <a href="login.html">
+                        <p>Esci</p>                        
+                    </a>
+                    </div>
+                    <h2>Foto Profilo e Biografia</h2>
+                    <div class="profile-info">
+                        <div class="profile-pic">
+                            <img src="Grafiche/propic.jpg" alt="Propic">
+                            <span class="change-profile-icon"><ion-icon name="create"></ion-icon></span>
+                        </div>
+    
+                        <div class="profile-bio">
+                            <h2>Biografia</h2>
+                                <p id="bio-text">Prova Biografia</p>
+                                <ion-icon name="create" class="edit-icon" onclick="editBio()"></ion-icon>
+                        </div>
+                    </div>
+                    <p style="font-weight: bold;">KLIPS <span style="font-weight: normal;">Caricate:</span> <span style="color: #13f4d5;">0</span></p> 
+                    <p style="font-weight: bold;">GG <span style="font-weight: normal;">Ottenuti:</span> <span style="color: #13f4d5;">0</span></p> 
+                    <h2 style="margin-top: 20px;">Le tue KLIPS</h2>
+                    
+                    <div class="klips-grid">
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        <div class="prova">
+                            <a href="klips.html">
+                                <video src="Grafiche/video-background.mp4" autoplay muted loop></video>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+    </div>
+
+    
+
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
