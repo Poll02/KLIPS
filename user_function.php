@@ -60,7 +60,7 @@ function userExist($con,$nomeutente, $email){
 
 function create_user($con,$nomeutente,$pword,$email){
     $hashedPassword = password_hash($pword, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO user (id, username, email, password,foto) VALUES ('', '$nomeutente', '$email', '$hashedPassword','')";
+    $sql = "INSERT INTO user (id, username, email, password,foto,bio) VALUES ('', '$nomeutente', '$email', '$hashedPassword','', '')";
     $rs = mysqli_query($con, $sql);
     if($rs)
     {

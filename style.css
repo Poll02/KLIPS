@@ -245,6 +245,8 @@ a{
     transition: 0.3s;
 }
 
+
+
 #idsearch{
     border: none;
     margin-bottom: 20px;
@@ -254,6 +256,7 @@ a{
 
 .games-grid-box img:hover{
     filter:brightness(60%);
+    transform: scale(0.96);
 }
 
 .page-box-find ion-icon{
@@ -407,8 +410,14 @@ header nav:hover > a:not(:hover){
 
     height: auto;
     width: 400px;
+    transition: 0.3s;
     
 }
+
+.login-container .logo-container img:hover{
+    transform: scale(1.26);
+}
+
 
 .registration-success{
     text-align: center;
@@ -532,7 +541,6 @@ header nav:hover > a:not(:hover){
     height: 300px;
     border-radius: 5px;
     color: #fff;
-    background-color: #1f1c37;
 }
 
 .page-box-profilo .klips-grid .prova video{
@@ -542,6 +550,7 @@ header nav:hover > a:not(:hover){
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
+    transition: 0.3s;
 
     
 }
@@ -549,12 +558,8 @@ header nav:hover > a:not(:hover){
 
 
 .page-box-profilo .klips-grid .prova video:hover{
-    -webkit-filter: brightness(40%);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    filter: brightness(40%);
+    transform: scale(0.96);
 }
 
 .page-box-profilo .see-all button{
@@ -575,74 +580,63 @@ header nav:hover > a:not(:hover){
 }
 /*HomePage*/
 
-.foto-nome-data{
-    display: flex;
-    align-items: center;
-}
-
-#game-name{
-    background-color: #19ab97;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    color: white;
-    border-radius: 10px;
-    padding: 5px;
-    transition: 0.3s;
-}
-
-#gg-button{
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    position: relative;
-    padding: 10px 22px;
-    background-color: rgb(255, 235, 119);
-    border: none;
-    border-radius: 50px;
-    font-weight: bolder;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-#gg-button:focus{
-    background-color: red;
-}
-
-#gg-button:active{
-    transform: scale(1.16);
-    background-color: gold;
-}
 
 
 
-
-
-#game-name:hover{
-    filter: brightness(130%);
-    cursor: pointer;
-
-}
-
-.page-box .video{
-    display: flex;
+    .homepage-grid{
+        margin-top: 20px;
+        margin-left: 30px;
+        gap: 10px;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+        margin-bottom: 20px;
+    }
     
+    .homepage-grid-box{
+        display: flex;
+        flex-direction: column;
+        
+       
+        width: 400px;
+        height: 300px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: white;
+    }
+    
+    .homepage-grid-box video{
+        width: 100%;
+        height:auto;
+        object-fit: fill;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .homepage-grid-box video:hover{
+        transform: scale(1.26);
+    }
+
+    
+
+.dettagli-post{
+    display: flex;
+    margin-top: 10px;
+
 }
 
-#foto-profilo{
-    margin-right: 20px;
-    border-radius: 50%;
-    width: 80px;
+#propic-homepage{
+    width: 30px;
     height: auto;
+    margin-right: 10px;
+    border-radius: 99px;
 }
+    
 
-#video-homepage{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    object-fit: fill;
-    height: auto;
-    width: 70%;
-    border-radius: 5px;
-}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -787,7 +781,7 @@ header nav:hover > a:not(:hover){
     margin-top: 20px;
     object-fit: fill;
     height: auto;
-    width: 100%;
+    width: 70%;
     border-radius: 5px;
     border: 3px solid #1f1c37;
 }
