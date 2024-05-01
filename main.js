@@ -56,18 +56,40 @@ function handleFileUpload(event) {
             const label = document.getElementById('file-label');
             const sendButton = document.getElementById('send-button');
             const backButton = document.getElementById('back-button');
+            const selGame = document.getElementById('game');
+            const selGameLabel = document.getElementById('game-label');
+            const klipInfo = document.getElementById('klip-info');
+            const klipInfoLabel = document.getElementById('klip-info-label');
+
             backButton.style.display = 'block';
             const header = document.getElementById('preview-header');
+            klipInfo.style.display = 'block';
+            klipInfoLabel.style.display = 'block';
+
             header.style.display = 'block';
             sendButton.style.display = 'block';
             videoPreview.src = e.target.result;
             videoPreview.style.display = 'block';
             label.style.display = 'none';
+            selGame.style.display = 'block';
+            selGameLabel.style.display = 'block';
 
         };
         reader.readAsDataURL(file);
     }
 }
+
+const video = document.getElementById('post-video');
+
+  video.addEventListener('mouseenter', () => {
+    video.play();
+  });
+  
+  video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+
 
 
 

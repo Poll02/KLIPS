@@ -58,11 +58,26 @@
                             
                     </div>
                     <div class="klip-preview">
-                        <h2 id="preview-header">Preview</h2>
+                        <h2 id="preview-header">Informazioni KLIP</h2>
                         <video id="video-preview" controls style="display: none;"></video>
+                        <label for="klip-info" id="klip-info-label" style="font-weight: bolder;">Titolo</label>
+                        <input type="text" id="klip-info" placeholder="Dicci qualcosa di più.. (max. 100 caratteri)">
+                        <label for="game" id="game-label">Scegli un <span style="font-weight: bolder;">gioco</span></label>
+                        <select id="game" name="game">
+                            <option value="lol">League of Legends</option>
+                            <option value="ow">Overwatch</option>
+                            <option value="cod">Call of Duty</option>
+                            <option value="bf">Battlefield</option>
+                            <option value="fort">Fortnite</option>
+
+
+
+
+                        </select>
                         <div class="klip-btns">
                             <button type="button" id="send-button" class="sendklip-btn"><i class="fa fa-upload"></i> Carica</button> <!--Da cambiare in submit-->
-                            <a href="addKlip.html">                            <button type="button" id="back-button" class="sendklip-btn"><i class="fa fa-rotate-left"></i> Indietro</button> <!--Da cambiare in submit-->
+                            <a href="addKlip.html">
+                                <button type="button" id="back-button" class="sendklip-btn"><i class="fa fa-rotate-left"></i> Indietro</button> <!--Da cambiare in submit-->
                             </a>
                         </div>
 
