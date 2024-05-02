@@ -60,12 +60,9 @@ function userExist($con,$nomeutente, $email){
 
 function create_user($con,$nomeutente,$pword,$email){
     $hashedPassword = password_hash($pword, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO user (id, username, email, password,foto,bio) VALUES ('', '$nomeutente', '$email', '$hashedPassword','', '')";
+    $sql = "INSERT INTO user (id, username, email, password,foto,bio) VALUES ('', '$nomeutente', '$email', '$hashedPassword','','')";
     $rs = mysqli_query($con, $sql);
-    if($rs)
-    {
-        echo "Entries added!";
-    }
+   
 
   
     // close connection
@@ -85,15 +82,13 @@ function emptyInputLogin($nomeutente, $pword){
 function LoginUser($con,$nomeutente,$pword){
     $userExist = userExist($con,$nomeutente, $nomeutente);
     if($userExist === false){
-        //header("Location: login.html") da modificare
-        echo "errore l'utente non esiste";
+        header("Location: login_form.php?error=userExist");
         exit();
     }
     $hashedPassword = $userExist['password'];
-    $checkpwd = password_veryfy($pword, $hashedPassword);
+    $checkpwd = password_verify($pword, $hashedPassword);
     if($checkpwd === false) {
-        //header("Location: login.html") da modificare
-        echo "password incorretta";
+        header("Location: login_form.php?error=PasswordError");
         exit();
     }
     else if($checkpwd === true) {
@@ -103,7 +98,7 @@ function LoginUser($con,$nomeutente,$pword){
         $_SESSION["password"] = $userExist["password"];
         $_SESSION["foto"] = $userExist["foto"];
         $_SESSION["email"] = $userExist["email"];
-        //header("Location: homepage.php") da modificare
+        header("Location: homepage.php"); //da modificare per eventuali messaggi dinamici
         exit();
     }
 }
